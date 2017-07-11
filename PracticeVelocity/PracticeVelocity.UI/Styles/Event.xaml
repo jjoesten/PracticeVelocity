@@ -3,20 +3,25 @@
                     xmlns:local="clr-namespace:PracticeVelocity.UI.Styles"
                     xmlns:model="clr-namespace:PracticeVelocity.Model;assembly=PracticeVelocity.Model">
     <DataTemplate DataType="{x:Type model:Event}">
-        <Border>
-            <StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="ID: " />
-                    <TextBlock Text="{Binding Id}" />
-                </StackPanel>
-                <ListBox ItemsSource="{Binding Items}">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding}" />
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="ID: " />
+                <TextBlock Text="{Binding Id}" />
             </StackPanel>
-        </Border>
+            <ListBox ItemsSource="{Binding Items}"
+                     Grid.Row="2">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+
     </DataTemplate>
 </ResourceDictionary>

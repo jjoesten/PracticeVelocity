@@ -8,7 +8,7 @@
         xmlns:local="clr-namespace:PracticeVelocity.UI"
         mc:Ignorable="d"
         DataContext="{Binding Source={x:Static viewmodel:ViewModelLocator.EventViewModel}}"
-        Title="MainWindow" Height="350" Width="525">
+        Title="PV Coding Challenge" Height="350" Width="525">
 
     <Grid>
         <Grid.ColumnDefinitions>
