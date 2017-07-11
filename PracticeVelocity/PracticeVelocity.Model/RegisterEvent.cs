@@ -15,7 +15,7 @@ namespace PracticeVelocity.Model
 
         public override void ProcessItem()
         {
-            for (int i = 1; i <= 101; i++)
+            for (int i = 1; i <= 100; i++)
             {
                 string value = string.Empty;
 

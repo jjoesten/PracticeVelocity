@@ -5,7 +5,10 @@
     <DataTemplate DataType="{x:Type model:Event}">
         <Border>
             <StackPanel>
-                <TextBlock Text="{Binding Id}" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="ID: " />
+                    <TextBlock Text="{Binding Id}" />
+                </StackPanel>
                 <ListBox ItemsSource="{Binding Items}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>

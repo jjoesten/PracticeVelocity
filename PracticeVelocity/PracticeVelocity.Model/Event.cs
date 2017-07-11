@@ -28,7 +28,7 @@ namespace PracticeVelocity.Model
 
         public virtual void ProcessItem()
         {
-            Console.WriteLine("Base Class Item Processing");
+            
         }
     }
 

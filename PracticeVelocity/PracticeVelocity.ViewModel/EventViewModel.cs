@@ -29,8 +29,6 @@ namespace PracticeVelocity.ViewModel
 
         void Register()
         {
-            Console.WriteLine("REGISTER Command");
-
             DisplayEvent = new RegisterEvent();
         }
 
@@ -46,8 +44,6 @@ namespace PracticeVelocity.ViewModel
 
         private void Diagnose()
         {
-            Console.WriteLine("DIAGNOSE Command");
-
             DisplayEvent = new DiagnoseEvent();
         }
 
